@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff8fa;
+    color: #444;
+}
+
+/* Navigation */
+
+header {
+    background-color: #f5c6d6;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #8b3157;
+}
+
+nav a {
+    text-decoration: none;
+    color: #633247;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Home */
+
+.home {
+    min-height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)),
+        url("https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=1400");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.home-content {
+    color: white;
+    max-width: 500px;
+}
+
+.home-content h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #e889aa;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Flowers */
+
+.flowers {
+    padding: 60px 6%;
+    text-align: center;
+}
+
+.flowers h2,
+.about h2,
+.contact h2,
+.cart h2 {
+    color: #a04468;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+.flower-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.flower-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.flower-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flower-card h3 {
+    color: #963e61;
+    margin: 12px 0;
+}
+
+.flower-card p {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.flower-card h4 {
+    margin-bottom: 12px;
+}
+
+button {
+    background-color: #d96c96;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ad426e;
+}
+
+/* About */
+
+.about {
+    background-color: #fce4ec;
+    text-align: center;
+    padding: 55px 10%;
+}
+
+.about p {
+    line-height: 1.8;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Cart */
+
+.cart {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+#cart-items {
+    list-style: none;
+    margin: 20px;
+}
+
+#cart-items li {
+    padding: 10px;
+}
+
+/* Contact */
+
+.contact {
+    padding: 50px 8%;
+    text-align: center;
+    background-color: #fff0f4;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 13px;
+    border: 1px solid #e4a9bd;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #a04468;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .home-content h2 {
+        font-size: 30px;
+    }
+
+}

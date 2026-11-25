@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bloom Corner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>🌸 Bloom Corner</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#flowers">Flowers</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#cart">Cart 🛒</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h2>Make Every Moment Bloom!</h2>
+
+            <p>
+                Fresh flowers for every special moment.
+                Bring happiness and beauty into your life.
+            </p>
+
+            <a href="#flowers" class="btn">Explore Flowers</a>
+        </div>
+
+    </section>
+
+
+    <!-- Flower Collection -->
+    <section class="flowers" id="flowers">
+
+        <h2>Our Flower Collection</h2>
+
+        <p class="subtitle">
+            Choose your favourite flowers
+        </p>
+
+        <div class="flower-container">
+
+            <div class="flower-card">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500" alt="Pink flowers">
+
+                <h3>Pink Roses</h3>
+
+                <p>Beautiful pink roses for special moments.</p>
+
+                <h4>₹299</h4>
+
+                <button onclick="addToCart('Pink Roses', 299, this)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="flower-card">
+                <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?w=500" alt="Sunflowers">
+
+                <h3>Sunflowers</h3>
+
+                <p>Bright sunflowers to spread happiness.</p>
+
+                <h4>₹249</h4>
+
+                <button onclick="addToCart('Sunflowers', 249, this)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="flower-card">
+                <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=500" alt="Tulips">
+
+                <h3>Tulips</h3>
+
+                <p>Elegant tulips for your loved ones.</p>
+
+                <h4>₹349</h4>
+
+                <button onclick="addToCart('Tulips', 349, this)">
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="flower-card">
+                <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=500" alt="Flower bouquet">
+
+                <h3>Flower Bouquet</h3>
+
+                <p>A lovely bouquet for every occasion.</p>
+
+                <h4>₹499</h4>
+
+                <button onclick="addToCart('Flower Bouquet', 499, this)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About Bloom Corner</h2>
+
+        <p>
+            Bloom Corner is a flower shop website where customers
+            can explore different flowers, select their favourites
+            and place orders easily.
+        </p>
+
+    </section>
+
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+
+        <h2>Your Shopping Cart 🛒</h2>
+
+        <ul id="cart-items"></ul>
+
+        <h3>Total: ₹<span id="total">0</span></h3>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+
+        <h2>Place Your Order</h2>
+
+        <form id="order-form">
+
+            <input type="text" id="customer-name" placeholder="Your Name" required>
+
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <textarea id="address" placeholder="Delivery Address" required></textarea>
+
+            <button type="submit">Place Order</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>🌸 Bloom Corner</h3>
+
+        <p>Bringing Flowers and Happiness Together.</p>
+
+        <p>© 2026 Bloom Corner. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
